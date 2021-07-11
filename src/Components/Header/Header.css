@@ -1,0 +1,139 @@
+header{
+    background-color: #37517e;
+};
+
+/* navbar start */
+.navbarfontSize {
+    font-size: 30px;
+}
+
+.navbar-button {
+    display: inline-block;
+    padding: 6px 22px;
+    border-radius: 50px;
+    color: white;
+    transition: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Jost", sans-serif;
+    transition: 0.3s;
+    border: 2px solid #47b2e4;
+    background-color: #37517e;
+}
+
+.navbar-button:hover {
+    background: #47b2e4;
+    color: #fff;
+}
+.navbarTrasform{
+    /* background-color: #212529b8!important; */
+    background: rgba(40, 58, 90, 0.9);
+}
+.navbarCustom ul li{
+    margin-right: 20px;
+}
+
+
+/* .navbarCustom .active:focus, ul li a:hover{
+    color: #47b2e4 !important;
+} */
+
+
+
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+    color: #47b2e4 !important;
+  }
+
+  /* dropdown menu */
+  .dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+  /* dropdown end */
+.logo {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.logoText a{
+    text-decoration: none;
+}
+
+.banner-left h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+}
+.banner-left h2 {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+.hero_scroll1 {
+    animation: MoveUpDown 4s ease-in-out infinite alternate-reverse both;
+    position: relative;
+}
+
+@keyframes MoveUpDown {
+
+    0%,
+    100% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 20px;
+    }
+}
+.banner-left h1{
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+    
+}
+.banner-left h2{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.banner-footer a{
+    text-decoration: none;
+}

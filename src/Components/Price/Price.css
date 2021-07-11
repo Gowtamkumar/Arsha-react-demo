@@ -1,0 +1,31 @@
+/* price start */
+.pricing p{
+    color: #37517e;
+}
+.price-card h4 {
+    font-size: 48px;
+    color: #37517e;
+    font-weight: 400;
+    font-family: "Jost", sans-serif;
+    margin-bottom: 25px;
+}
+
+.price-card h4 span {
+    color: #47b2e4;
+    font-size: 18px;
+    display: block;
+}
+.price-card{
+    box-shadow: rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    padding:40px;
+}
+.price-card ul{
+    padding: 0px;
+}
+.price-card ul li{
+    list-style: none;
+    line-height: 40px;
+    color: #999;
+    
+}

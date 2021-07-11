@@ -1,0 +1,18 @@
+
+/* action start */
+.action-contaienr h2 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+}
+.action-contaienr {
+    background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url(https://bootstrapmade.com/demo/templates/Arsha/assets/img/cta-bg.jpg) fixed center center;
+    background-size: cover;
+    padding: 120px 0;
+    color:white;
+}
+.action-contaienr button:hover{
+    background-color:#219DD8;
+    color:white;
+
+}

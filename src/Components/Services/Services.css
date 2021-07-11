@@ -1,0 +1,22 @@
+/* servicess start */
+#services .service-box {
+    box-shadow: 0px 0 25px 0 rgb(0 0 0 / 10%);
+    padding: 50px 30px;
+    transition: all ease-in-out 0.4s;
+    background: #fff;
+}
+
+#services .service-box i{
+    font-size: 30px;
+}
+
+#services .service-box:hover {
+    transform: translateY(-10px);
+}
+.service-box h4 a{
+    text-decoration: none;
+}
+.service-box h4 {
+    color:#47b2e4;
+}
+
