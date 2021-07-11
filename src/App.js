@@ -11,6 +11,10 @@ import Portfolio from './Components/Portfolio/Portfolio';
 import Team from './Components/Team/Team';
 import Price from './Components/Price/Price';
 import Frequently from './Components/Frequently/Frequently';
+import Contact from './Components/Shared/Contact/Contact';
+import NewsLetter from './Components/NewsLetter/NewsLetter';
+import Widget from './Components/Widget/Widget';
+import Footer from './Components/Shared/Footer/Footer';
 
 
 function App() {
@@ -27,6 +31,10 @@ function App() {
         <Team></Team>
         <Price></Price>
         <Frequently></Frequently>
+        <Contact></Contact>
+        <NewsLetter></NewsLetter>
+        <Widget></Widget>
+        <Footer></Footer>
     </main>
   );
 }

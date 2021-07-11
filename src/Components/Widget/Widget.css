@@ -1,0 +1,61 @@
+
+.userful-link a{
+    text-decoration: none;
+}
+.userful-link ul li{
+    list-style: none;
+}
+.userful-link ul li i{
+    font-size: 10px;
+}
+.userful-link ul li{
+    line-height: 34px;
+}
+.userful-link ul li a:hover{
+    color:#219DD8; 
+}
+.userful-link ul li a{
+    color:#777777;
+}
+.company-info h3{
+    font-size: 28px;
+    margin: 0 0 10px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #37517e;
+}
+.company-info{
+    color:#777777;
+}
+.widget-icon h4{
+    font-size: 16px;
+    font-weight: bold;
+    color: #37517e;
+    position: relative;
+    padding-bottom: 12px;
+}
+.widget-icon p{
+    color:#777777;
+}
+.userful-link h4{
+    font-size: 16px;
+    font-weight: bold;
+    color: #37517e;
+    position: relative;
+    padding-bottom: 12px;
+}
+.widget-icon a{
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    color:white;
+    background-color: #219DD8;
+    margin-right: 5px;
+}

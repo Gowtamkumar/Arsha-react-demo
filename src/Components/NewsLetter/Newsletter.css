@@ -1,0 +1,36 @@
+
+.Newsletter p{
+    color:#777777;
+}
+.subscribe:hover{
+    background: #2591c4;
+}
+.Newsletter h3{
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 600;
+    color: #37517e;
+}
+.Newsletter-from{
+    border-bottom-left-radius: 30px!important;
+    border-top-left-radius:30px !important;
+   
+    
+}
+
+.subscribe-button-style {
+    display: flex;
+    align-items: center;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    
+    text-align: center;
+    white-space: nowrap;
+    background-color: #219DD8; 
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+}
