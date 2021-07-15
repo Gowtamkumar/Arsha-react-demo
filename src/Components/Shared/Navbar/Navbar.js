@@ -18,7 +18,7 @@ const Navbar = () => {
 
     return (
         <div>
-            {/* navbar start  */}
+           
             <div className="col-md-12 col-sm-12 col-lg-12">
                 <nav className="navbar navbar-expand-lg fixed-top navbar-light p-3">
                     <div className="container logoText">

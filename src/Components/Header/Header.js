@@ -7,10 +7,14 @@ const Header = () => {
     return (
         <header>
             <div class="container-fluid">
-                <div class="row">
-                    <Navbar></Navbar>
-                    <Banner></Banner>
-                
+                <div className="container">
+
+
+                    <div class="row">
+                        <Navbar></Navbar>
+                        <Banner></Banner>
+
+                    </div>
                 </div>
             </div>
         </header>

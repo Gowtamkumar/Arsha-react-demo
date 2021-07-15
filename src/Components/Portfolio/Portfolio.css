@@ -1,4 +1,3 @@
-/* portfolio start */
 
 #container {
     margin: auto;
@@ -31,14 +30,14 @@
       height: auto;
       overflow: hidden;
       text-align: center;
-      width: 400px;
+      
+      /* width: 400px; */
   }
   .grid-item img{
       width:100%;
       height:auto;
-      filter: url(filters.svg#grayscale);
+      /* filter: url(filters.svg#grayscale); */
       filter: gray;
-      
       transition: 0.9s;
   }
   .grid-item img:hover{
@@ -163,24 +162,23 @@
     right: 0;
   }
   
-  
-  
-  
-  
   .overlay {
-    position: absolute; 
-    bottom: 0; 
+    position: absolute;
+    margin-bottom: 0; 
     background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
-    color: #f1f1f1; 
-    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 25.8%;
     transition: .5s ease;
-    opacity:0;
-    color: white;
-    font-size: 20px;
-    padding: 10px;
-    text-align: center;
-  }
+    padding:5px;
+    opacity: 0;
+    /* display: none; */
+   
+    
+    
+    
+    
+}
   
   .overlay-title p{
       font-size: 15px;
@@ -191,6 +189,8 @@
   
   .grid-item:hover .overlay {
     opacity: 1;
+    /* display: block; */
+    
   }
   
   a{
@@ -198,3 +198,17 @@
   }
   
   
+  .button{
+    padding:10px;
+    margin: 10px;
+    border:none;
+    background-color: white !important;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    
+  }
+
+  button:hover{
+    background-color: yellow;
+  }

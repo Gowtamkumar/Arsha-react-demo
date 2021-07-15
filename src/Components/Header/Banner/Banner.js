@@ -15,7 +15,7 @@ const Banner = () => {
                                 <button class="custome-button brand-bgcolor text-light rounded-pill">Get
                                     Started</button> &nbsp;&nbsp;
                                 <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="text-light">
-                                    <i class="fas fa-play-circle"></i>
+                                    <i class="fas fa-play-circle"></i>&nbsp;
                                     <span>Watch Video</span>
                                 </a>
                             </div>
