@@ -36,7 +36,7 @@ const Widget = () => {
                     <div class="col-md-3 widget-icon">
                         <h4>Our Social Networks</h4>
                         <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-                        <div class="social-icon d-flex justify-content-start align-items-center">
+                        <div class="socialIcon d-flex justify-content-start align-items-center">
                             <a href="">
                                 <i class="fab fa-facebook "></i>
                             </a>

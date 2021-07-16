@@ -21,24 +21,23 @@ const Price = () => {
                             </h4>
                             <ul>
                                 <li>
-                                    <i class="fas fa-check brand-color"></i>
-                                    Quam adipiscing of life, therefore
+                                    <i class="fas fa-check brand-color"></i> Quam adipiscing of life, therefore
+                                    
                                 </li>
                                 <li>
-                                    <i class="fas fa-check brand-color"></i>
-                                    o price feugiat
+                                    <i class="fas fa-check brand-color"></i> o price feugiat
                                 </li>
                                 <li>
-                                    <i class="fas fa-check brand-color"></i>
-                                    There is no womb diameter at weekend
+                                    <i class="fas fa-check brand-color"></i>  There is no womb diameter at weekend
+                                   
                                 </li>
                                 <li>
-                                    <i class="fas fa-times"></i>
-                                    <del>Navigation mass mass ultricies</del>
+                                    <i class="fas fa-times"></i> <del> Navigation mass mass ultricies</del>
+                                    
                                 </li>
                                 <li>
-                                    <i class="fas fa-times"></i>
-                                    <del>Mass ultricies anyone Bureau</del>
+                                    <i class="fas fa-times"></i> <del> Mass ultricies anyone Bureau</del>
+                                    
                                 </li>
                             </ul>
                             <button type="button" class="custome-button rounded-pill pl-3 pr-3">Get
@@ -56,24 +55,19 @@ const Price = () => {
                             </h4>
                             <ul>
                                 <li>
-                                    <i class="fas fa-check brand-color"></i>
-                                    Quam adipiscing of life, therefore,
+                                    <i class="fas fa-check brand-color"></i> Quam adipiscing of life, therefore,
                                 </li>
                                 <li>
-                                    <i class="fas fa-check brand-color"></i>
-                                    o price feugiat
+                                    <i class="fas fa-check brand-color"></i> price feugiat
                                 </li>
                                 <li>
-                                    <i class="fas fa-check brand-color"></i>
-                                    There is no womb diameter at weekend
+                                    <i class="fas fa-check brand-color"></i> There is no womb diameter at weekend
                                 </li>
                                 <li>
-                                    <i class="fas fa-check brand-color"></i>
-                                    Navigation mass mass ultricies
+                                    <i class="fas fa-check brand-color"></i> Navigation mass mass ultricies
                                 </li>
                                 <li>
-                                    <i class="fas fa-check brand-color"></i>
-                                    Mass ultricies anyone Bureau
+                                    <i class="fas fa-check brand-color"></i> Mass ultricies anyone Bureau
                                 </li>
                             </ul>
                             <button type="button" class="brand-bgcolor custome-button rounded-pill text-light">Get
@@ -90,24 +84,20 @@ const Price = () => {
                             </h4>
                             <ul>
                                 <li>
-                                    <i class="fas fa-check brand-color"></i>
-                                    Quam adipiscing of life, therefore,
+                                    <i class="fas fa-check brand-color"></i> Quam adipiscing of life, therefore,
+                                    
                                 </li>
                                 <li>
-                                    <i class="fas fa-check brand-color"></i>
-                                    o price feugiat
+                                    <i class="fas fa-check brand-color"></i> o price feugiat
                                 </li>
                                 <li>
-                                    <i class="fas fa-check brand-color"></i>
-                                    There is no womb diameter at weekend
+                                    <i class="fas fa-check brand-color"></i> There is no womb diameter at weekend
                                 </li>
                                 <li>
-                                    <i class="fas fa-check brand-color"></i>
-                                    Navigation mass mass ultricies
+                                    <i class="fas fa-check brand-color"></i> Navigation mass mass ultricies
                                 </li>
                                 <li>
-                                    <i class="fas fa-check brand-color"></i>
-                                    Mass ultricies anyone Bureau
+                                    <i class="fas fa-check brand-color"></i> Mass ultricies anyone Bureau
                                 </li>
                             </ul>
                             <button type="button" class="custome-button rounded-pill pl-3 pr-3">Get

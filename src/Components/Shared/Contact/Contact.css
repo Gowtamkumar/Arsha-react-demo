@@ -2,6 +2,7 @@
 .icon i{
     font-size: 26px;
     padding: 10px;
+    color:white;
 }
 
 .icon a{
@@ -14,6 +15,7 @@
     width: 52px;
     height: 50px;
     background-color: #eff2f8;
+    color: white;
 }
 
 .contact-from{

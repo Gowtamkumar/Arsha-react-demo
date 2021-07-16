@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Team.css'
+import AOS from 'aos';
+import "aos/dist/aos.css"
 const Team = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 2000
+        });
+    }, []);
     return (
-        <section class="heading-section pt-5 pb-5 team-section" style={{backgroundColor: '#F3F5FA'}} id="team">
+        <section class="heading-section pt-5 pb-5 team-section" style={{ backgroundColor: '#F3F5FA' }} id="team">
             <div class="container pb-3 pt-5">
                 <div class="row">
                     <h2 class="text-center" data-aos="fade-up">TEAM</h2>
@@ -15,7 +22,7 @@ const Team = () => {
                         <div class="team-info d-flex justify-content-between align-items-center">
                             <div class="team-img mr-5 p-3">
                                 <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-1.jpg"
-                                    alt="" class="img-fluid" style={{borderRadius: '50%'}} />
+                                    alt="" class="img-fluid" style={{ borderRadius: '50%' }} />
                             </div>
                             <div class="team p-3">
                                 <h4>Walter White</h4>
@@ -42,7 +49,7 @@ const Team = () => {
                         <div class="team-info d-flex justify-content-between align-items-center">
                             <div class="team-img mr-5 p-3">
                                 <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-2.jpg"
-                                    alt="" class="img-fluid" style={{borderRadius: '50%'}} />
+                                    alt="" class="img-fluid" style={{ borderRadius: '50%' }} />
                             </div>
                             <div class="team p-3">
                                 <h4>Sarah Jhonson</h4>
@@ -69,7 +76,7 @@ const Team = () => {
                         <div class="team-info d-flex justify-content-between align-items-center">
                             <div class="team-img mr-5 p-3">
                                 <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-3.jpg"
-                                    alt="" class="img-fluid" style={{borderRadius: '50%'}} />
+                                    alt="" class="img-fluid" style={{ borderRadius: '50%' }} />
                             </div>
                             <div class="team p-3">
                                 <h4>William Anderson</h4>
@@ -96,7 +103,7 @@ const Team = () => {
                         <div class="team-info d-flex justify-content-between align-items-center">
                             <div class="team-img mr-5 p-3">
                                 <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-4.jpg"
-                                    alt="" class="img-fluid" style={{borderRadius: '50%'}} />
+                                    alt="" class="img-fluid" style={{ borderRadius: '50%' }} />
                             </div>
                             <div class="team p-3">
                                 <h4>Amanda Jepson</h4>

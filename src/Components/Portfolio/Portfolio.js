@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import './Portfolio.css'
+import { SRLWrapper } from "simple-react-lightbox";
+
+import AOS from 'aos';
+import "aos/dist/aos.css"
+
 const Portfolio = () => {
     const [catagory, Setcatagory] = useState("all")
     const [filterProject, setfilterProject] = useState([])
@@ -7,6 +12,11 @@ const Portfolio = () => {
     useEffect(() => {
         catagory === 'all' ? setfilterProject(allproject) : setfilterProject(allproject.filter(project => project.catagory === catagory))
     }, [catagory])
+    useEffect(() => {
+        AOS.init({
+          duration : 2000
+        });
+      }, []);
 
     const allproject = [
         {
@@ -68,7 +78,7 @@ const Portfolio = () => {
 
     // catagory button
     const CatagoryButton = ({ catagoryName, handleSetcatagory }) => {
-        return <button class="button" onClick={()=> handleSetcatagory(catagoryName)}>{catagoryName.toUpperCase()}</button>;
+        return <button class="button" onClick={() => handleSetcatagory(catagoryName)}>{catagoryName.toUpperCase()}</button>;
     }
 
     return (
@@ -76,8 +86,8 @@ const Portfolio = () => {
             <div className="container">
                 <div className="row">
                     <div class="filters filter-button-group pt-5">
-                        <h2 class="text-center" data-aos="fade-up">Portfolio</h2>
-                        <p class="text-center" data-aos="fade-up">
+                        <h2 class="text-center" data-aos={"fade-left"}>Portfolio</h2>
+                        <p class="text-center" data-aos={"fade-left"}>
                             Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
                             sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
                             Quia fugiat sit in iste officiis commodi quidem hic quas.
@@ -88,42 +98,44 @@ const Portfolio = () => {
                             <div className="row">
                                 <div className="col-md-12 text-center" handleSetcatagory={Setcatagory}>
                                     <CatagoryButton catagoryName="all" handleSetcatagory={Setcatagory} />
-                                    <CatagoryButton catagoryName="app" handleSetcatagory={Setcatagory}/>
-                                    <CatagoryButton catagoryName="web" handleSetcatagory={Setcatagory}/>
-                                    <CatagoryButton catagoryName="card" handleSetcatagory={Setcatagory}/>
+                                    <CatagoryButton catagoryName="app" handleSetcatagory={Setcatagory} />
+                                    <CatagoryButton catagoryName="web" handleSetcatagory={Setcatagory} />
+                                    <CatagoryButton catagoryName="card" handleSetcatagory={Setcatagory} />
                                 </div>
                             </div>
-
-                          
-
-
-
+                            <SRLWrapper>
                                 {
                                     filterProject.map((portfolio) =>
                                         <div class="grid-item col-md-4" key={portfolio.id}>
-                                            <img src={portfolio.imageUrl} class="img-fluid" style={{width:"100%", height:"300px"}}/>
+                                            <img src={portfolio.imageUrl} class="img-fluid" style={{ width: "100%", height: "300px" }} />
+
                                             <div class="overlay">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <div class="overlay-title">
                                                         <h5>App 1</h5>
                                                         <p>App</p>
                                                     </div>
+
                                                     <div>
-                                                        <a class="popupimg"
-                                                            href="https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-1.jpg">
+
+                                                        {/* <a class="popupimg"
+                                                            href={portfolio.imageUrl}>
                                                             <i class="fas fa-plus"></i>
-                                                            <img src="" />
-                                                        </a>
+                                                            
+                                                        </a> */}
+
                                                         <a href="Index.html">
                                                             <i class="fas fa-link"></i>
                                                         </a>
                                                     </div>
+
                                                 </div>
                                             </div>
+
                                         </div>
                                     )
                                 }
-                           
+                            </SRLWrapper>
                         </div>
 
 
