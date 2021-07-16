@@ -12,11 +12,12 @@ const Portfolio = () => {
     useEffect(() => {
         catagory === 'all' ? setfilterProject(allproject) : setfilterProject(allproject.filter(project => project.catagory === catagory))
     }, [catagory])
+
     useEffect(() => {
         AOS.init({
-          duration : 2000
+            duration: 2000
         });
-      }, []);
+    }, []);
 
     const allproject = [
         {
