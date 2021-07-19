@@ -79,7 +79,7 @@ const Portfolio = () => {
 
     // catagory button
     const CatagoryButton = ({ catagoryName, handleSetcatagory, catagoryActive }) => {
-        return <button class={`button ${catagoryActive ? 'active' : null}`} onClick={() => handleSetcatagory(catagoryName)}>{catagoryName.toUpperCase()}</button>;
+        return <button class={`button ${catagoryActive ? 'portfolioactive' : null}`} onClick={() => handleSetcatagory(catagoryName)}>{catagoryName.toUpperCase()}</button>;
     }
     // catagory button end
 
