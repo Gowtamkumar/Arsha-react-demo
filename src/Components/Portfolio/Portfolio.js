@@ -78,9 +78,10 @@ const Portfolio = () => {
     ]
 
     // catagory button
-    const CatagoryButton = ({ catagoryName, handleSetcatagory }) => {
-        return <button class="button" onClick={() => handleSetcatagory(catagoryName)}>{catagoryName.toUpperCase()}</button>;
+    const CatagoryButton = ({ catagoryName, handleSetcatagory, catagoryActive }) => {
+        return <button class={`button ${catagoryActive ? 'active' : null}`} onClick={() => handleSetcatagory(catagoryName)}>{catagoryName.toUpperCase()}</button>;
     }
+    // catagory button end
 
     return (
         <section class="heading-section container pt-5" id="portfolio">
@@ -97,11 +98,11 @@ const Portfolio = () => {
                     <div id="container" class="isotope" data-aos="fade-up">
                         <div className="container">
                             <div className="row">
-                                <div className="col-md-12 text-center" handleSetcatagory={Setcatagory}>
-                                    <CatagoryButton catagoryName="all" handleSetcatagory={Setcatagory} />
-                                    <CatagoryButton catagoryName="app" handleSetcatagory={Setcatagory} />
-                                    <CatagoryButton catagoryName="web" handleSetcatagory={Setcatagory} />
-                                    <CatagoryButton catagoryName="card" handleSetcatagory={Setcatagory} />
+                                <div className="col-md-12 text-center" id="navbarText" handleSetcatagory={Setcatagory}>
+                                    <CatagoryButton catagoryName="all" handleSetcatagory={Setcatagory} catagoryActive={catagory === 'all' ? true : false} />
+                                    <CatagoryButton catagoryName="app" handleSetcatagory={Setcatagory} catagoryActive={catagory === 'app' ? true : false} />
+                                    <CatagoryButton catagoryName="web" handleSetcatagory={Setcatagory} catagoryActive={catagory === 'web' ? true : false} />
+                                    <CatagoryButton catagoryName="card" handleSetcatagory={Setcatagory} catagoryActive={catagory === 'card' ? true : false} />
                                 </div>
                             </div>
                             <SRLWrapper>

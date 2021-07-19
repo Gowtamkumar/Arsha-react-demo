@@ -173,11 +173,6 @@
     padding:5px;
     opacity: 0;
     /* display: none; */
-   
-    
-    
-    
-    
 }
   
   .overlay-title p{
@@ -197,16 +192,19 @@
       text-decoration: none;
   }
   
-  
   .button{
-    padding:10px;
     margin: 10px;
-    border:none;
-    background-color: white !important;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    border: none;
+    background-color: none;
+    border-radius: 30px;
+    width: 70px;
+    height: 37px;
     
   }
-
-  
+.catagory{
+  text-align: center;
+}
+.active{
+  background-color: #219DD8;
+  color:white;
+}
