@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Frequently.css'
 const Frequently = () => {
     return (
         <section class="heading-section pt-5 pb-5" style={{backgroundColor: "#F3F5FA"}}>
@@ -17,7 +17,7 @@ const Frequently = () => {
                                 <h3 class="accordion-header" id="headingOne">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <i class="fas fa-question-circle"></i> &nbsp;
+                                        <i class="fas fa-question-circle icon-help"></i> &nbsp;
                                         <span>Non consectetur a erat nam at lectus urna duis?</span>
                                     </button>
                                 </h3>
@@ -34,7 +34,7 @@ const Frequently = () => {
                                 <h3 class="accordion-header" id="headingTwo">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        <i class="fas fa-question-circle"></i>&nbsp;
+                                        <i class="fas fa-question-circle icon-help"></i>&nbsp;
                                         <span>Feugiat scelerisque varius morbi enim nunc?</span>
                                     </button>
                                 </h3>
@@ -53,7 +53,7 @@ const Frequently = () => {
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseThree" aria-expanded="false"
                                         aria-controls="collapseThree">
-                                        <i class="fas fa-question-circle"></i>&nbsp;
+                                        <i class="fas fa-question-circle icon-help"></i>&nbsp;
                                         Dolor sit amet consectetur adipiscing elit?
                                     </button>
                                 </h3>
@@ -72,7 +72,7 @@ const Frequently = () => {
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseFore" aria-expanded="false"
                                         aria-controls="collapseFore">
-                                        <i class="fas fa-question-circle"></i>&nbsp;
+                                        <i class="fas fa-question-circle icon-help"></i>&nbsp;
                                         Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
                                     </button>
                                 </h3>
@@ -91,7 +91,7 @@ const Frequently = () => {
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseFive" aria-expanded="false"
                                         aria-controls="collapseFive">
-                                        <i class="fas fa-question-circle"></i>&nbsp;
+                                        <i class="fas fa-question-circle icon-help"></i>&nbsp;
                                         Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget
                                         lorem dolor?
                                     </button>

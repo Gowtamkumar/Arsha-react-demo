@@ -25,7 +25,7 @@ const Footer = () => {
                                 Copyright <strong>Arsha</strong>. All Rights Reserved
                             </div>
                             <div class="footer-right">
-                                Designed by <a href="">Gowtam Kumar</a>
+                                Designed by <a href="https://gowtamkumar.netlify.app/">Gowtam Kumar</a>
                             </div>
                         </div>
 
