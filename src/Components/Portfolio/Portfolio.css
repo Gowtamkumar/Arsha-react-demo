@@ -195,7 +195,7 @@
   .button{
     margin: 10px;
     border: none;
-    background-color: none;
+    background-color: white;
     border-radius: 30px;
     width: 70px;
     height: 37px;
