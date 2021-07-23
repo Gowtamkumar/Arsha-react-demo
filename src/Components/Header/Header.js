@@ -6,11 +6,11 @@ import './Header.css'
 const Header = () => {
     return (
         <header>
-            <div class="container-fluid">
+            <div className="container-fluid">
                 <div className="container">
 
 
-                    <div class="row">
+                    <div className="row">
                         <Navbar></Navbar>
                         <Banner></Banner>
 

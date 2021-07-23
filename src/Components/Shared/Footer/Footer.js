@@ -17,14 +17,14 @@ const Footer = () => {
 
     return (
         <div>
-            <footer class="">
-                <div class="container">
-                    <div class="row ">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="footer-left">
+            <footer className="">
+                <div className="container">
+                    <div className="row ">
+                        <div className="d-flex justify-content-between align-items-center">
+                            <div className="footer-left">
                                 Copyright <strong>Arsha</strong>. All Rights Reserved
                             </div>
-                            <div class="footer-right">
+                            <div className="footer-right">
                                 Designed by <a href="https://gowtamkumar.netlify.app/">Gowtam Kumar</a>
                             </div>
                         </div>
@@ -32,8 +32,8 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
-            <a href="#" class="go-top">
-                <i class="fas fa-arrow-up"></i>
+            <a href="#" className="go-top">
+                <i className="fas fa-arrow-up"></i>
             </a>
         </div>
     );

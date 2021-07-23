@@ -17,11 +17,11 @@ const Navbar = () => {
     }, [])
 
     useEffect(() => {
-        // Active Menu start 
+        // Active Menu start
         // Get the container element
         var btnContainer = document.getElementById("navbarText");
 
-        // Get all buttons with class="btn" inside the container
+        // Get all buttons with className="btn" inside the container
         var btns = btnContainer.getElementsByClassName("nav-link");
 
         // Loop through the buttons and add the active class to the current/clicked button

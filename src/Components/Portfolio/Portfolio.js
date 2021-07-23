@@ -79,23 +79,23 @@ const Portfolio = () => {
 
     // catagory button
     const CatagoryButton = ({ catagoryName, handleSetcatagory, catagoryActive }) => {
-        return <button class={`button ${catagoryActive ? 'portfolioactive' : null}`} onClick={() => handleSetcatagory(catagoryName)}>{catagoryName.toUpperCase()}</button>;
+        return <button className={`button ${catagoryActive ? 'portfolioactive' : null}`} onClick={() => handleSetcatagory(catagoryName)}>{catagoryName.toUpperCase()}</button>;
     }
     // catagory button end
 
     return (
-        <section class="heading-section container pt-5" id="portfolio">
+        <section className="heading-section container pt-5" id="portfolio">
             <div className="container">
                 <div className="row">
-                    <div class="filters filter-button-group pt-5">
-                        <h2 class="text-center" data-aos={"fade-left"}>Portfolio</h2>
-                        <p class="text-center" data-aos={"fade-left"}>
+                    <div className="filters filter-button-group pt-5">
+                        <h2 className="text-center" data-aos={"fade-left"}>Portfolio</h2>
+                        <p className="text-center" data-aos={"fade-left"}>
                             Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
                             sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
                             Quia fugiat sit in iste officiis commodi quidem hic quas.
                         </p>
                     </div>
-                    <div id="container" class="isotope" data-aos="fade-up">
+                    <div id="container" className="isotope" data-aos="fade-up">
                         <div className="container">
                             <div className="row">
                                 <div className="col-md-12 text-center" id="navbarText" handleSetcatagory={Setcatagory}>
@@ -105,29 +105,30 @@ const Portfolio = () => {
                                     <CatagoryButton catagoryName="card" handleSetcatagory={Setcatagory} catagoryActive={catagory === 'card' ? true : false} />
                                 </div>
                             </div>
-                            <SRLWrapper>
+                           
                                 {
                                     filterProject.map((portfolio) =>
-                                        <div class="grid-item col-md-4" key={portfolio.id}>
-                                            <img src={portfolio.imageUrl} class="img-fluid" style={{ width: "100%", height: "300px" }} />
-
-                                            <div class="overlay">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="overlay-title">
+                                        <div className="grid-item col-md-4" key={portfolio.id}>
+                                             <SRLWrapper>
+                                            <img src={portfolio.imageUrl} className="img-fluid" style={{ width: "100%", height: "300px" }} />
+                                            </SRLWrapper>
+                                            <div className="overlay">
+                                                <div className="d-flex justify-content-between align-items-center">
+                                                    <div className="overlay-title">
                                                         <h5>App 1</h5>
                                                         <p>App</p>
                                                     </div>
 
                                                     <div>
 
-                                                        {/* <a class="popupimg"
+                                                        {/* <a className="popupimg"
                                                             href={portfolio.imageUrl}>
-                                                            <i class="fas fa-plus"></i>
+                                                            <i className="fas fa-plus"></i>
                                                             
                                                         </a> */}
 
                                                         <a href="Index.html">
-                                                            <i class="fas fa-link"></i>
+                                                            <i className="fas fa-link"></i>
                                                         </a>
                                                     </div>
 
@@ -137,7 +138,7 @@ const Portfolio = () => {
                                         </div>
                                     )
                                 }
-                            </SRLWrapper>
+                            
                         </div>
 
 
