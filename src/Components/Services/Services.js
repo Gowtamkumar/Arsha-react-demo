@@ -15,6 +15,7 @@ const Services = () => {
                         <div className="service-box text-center" data-aos="zoom-in">
                             <i className="fab fa-dribbble brand-color"></i><br />
                             <h4 className="mt-3"><a href="#">Lorem Ipsum</a></h4>
+                            
                             <p className="mt-3">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
                             </p>
                         </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import './Accordion.css'
 const Accordion = () => {
     return (
-        <section style={{ backgroundColor: '#F3F5F;', paddingBottom: '100px',  }} className="accordin-section">
+        <section style={{ backgroundColor: '#F3F5F', paddingBottom: '100px' }} className="accordin-section">
             <div className="container mt-5 pt-5">
                 <div className="row pt-5">
                     <div className="col-md-6">

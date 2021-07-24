@@ -48,30 +48,32 @@ const Contact = () => {
                             </div>
                             <iframe
                                 src="https://www.google.ccontactom/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-                                frameborder="0" style={{ border: '0', width: '100%', height: '346px' }}
-                                allowfullscreen="" ></iframe>
+                                frameBorder="0" style={{ border: '0', width: '100%', height: '346px' }}
+                                 title="This is google"></iframe>
+                                
+
                         </div>
                     </div>
                     <div className="col-md-7" data-aos="fade-up">
                         <div className="from shadow p-5 contact-from">
                             <form className="row g-3">
                                 <div className="col-md-6">
-                                    <label for="inputEmail4" className="form-label">Your Name</label>
-                                    <input type="text" className="form-control" id="inputEmail4" placeholder="" required/>
+                                    
+                                    <input type="text" className="form-control" id="inputEmail4" placeholder="Your Name" required/>
                                 </div>
                                 <div className="col-md-6">
-                                    <label for="email420" className="form-label">Your Email</label>
-                                    <input type="email" className="form-control" id="email420" placeholder="" required />
+                                 
+                                    <input type="email" className="form-control" id="email420" placeholder="Your Email" required />
                                 </div>
                                 <div className="col-12">
-                                    <label for="inputSubjeet" className="form-label">Subject</label>
+                                   
                                     <input type="text" className="form-control" id="inputSubjeet"
-                                        placeholder="" required/>
+                                        placeholder="subject" required />
                                 </div>
 
                                 <div className="mb-3">
-                                    <label for="exampleFormControlTextarea1" className="form-label">Message</label>
-                                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="13"
+                                    
+                                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="13" placeholder="Message..."
                                     ></textarea>
                                 </div>
                                 <div className="col-12 d-flex justify-content-center">

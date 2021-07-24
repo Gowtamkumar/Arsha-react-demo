@@ -11,13 +11,10 @@ const Portfolio = () => {
 
     useEffect(() => {
         catagory === 'all' ? setfilterProject(allproject) : setfilterProject(allproject.filter(project => project.catagory === catagory))
-    }, [catagory])
-
-    useEffect(() => {
         AOS.init({
             duration: 2000
         });
-    }, []);
+    }, [])
 
     const allproject = [
         {
@@ -78,8 +75,8 @@ const Portfolio = () => {
     ]
 
     // catagory button
-    const CatagoryButton = ({ catagoryName, handleSetcatagory, catagoryActive }) => {
-        return <button className={`button ${catagoryActive ? 'portfolioactive' : null}`} onClick={() => handleSetcatagory(catagoryName)}>{catagoryName.toUpperCase()}</button>;
+    const CatagoryButton = ({ catagoryName, handlesetcatagory, catagoryActive }) => {
+        return <button className={`button ${catagoryActive ? 'portfolioactive' : null}`} onClick={() => handlesetcatagory(catagoryName)}>{catagoryName.toUpperCase()}</button>;
     }
     // catagory button end
 
@@ -98,11 +95,11 @@ const Portfolio = () => {
                     <div id="container" className="isotope" data-aos="fade-up">
                         <div className="container">
                             <div className="row">
-                                <div className="col-md-12 text-center" id="navbarText" handleSetcatagory={Setcatagory}>
-                                    <CatagoryButton catagoryName="all" handleSetcatagory={Setcatagory} catagoryActive={catagory === 'all' ? true : false} />
-                                    <CatagoryButton catagoryName="app" handleSetcatagory={Setcatagory} catagoryActive={catagory === 'app' ? true : false} />
-                                    <CatagoryButton catagoryName="web" handleSetcatagory={Setcatagory} catagoryActive={catagory === 'web' ? true : false} />
-                                    <CatagoryButton catagoryName="card" handleSetcatagory={Setcatagory} catagoryActive={catagory === 'card' ? true : false} />
+                                <div className="col-md-12 text-center" id="navbarText" handlesetcatagory={Setcatagory}>
+                                    <CatagoryButton catagoryName="all" handlesetcatagory={Setcatagory} catagoryActive={catagory === 'all' ? true : false} />
+                                    <CatagoryButton catagoryName="app" handlesetcatagory={Setcatagory} catagoryActive={catagory === 'app' ? true : false} />
+                                    <CatagoryButton catagoryName="web" handlesetcatagory={Setcatagory} catagoryActive={catagory === 'web' ? true : false} />
+                                    <CatagoryButton catagoryName="card" handlesetcatagory={Setcatagory} catagoryActive={catagory === 'card' ? true : false} />
                                 </div>
                             </div>
                            
@@ -110,7 +107,7 @@ const Portfolio = () => {
                                     filterProject.map((portfolio) =>
                                         <div className="grid-item col-md-4" key={portfolio.id}>
                                              <SRLWrapper>
-                                            <img src={portfolio.imageUrl} className="img-fluid" style={{ width: "100%", height: "300px" }} />
+                                            <img src={portfolio.imageUrl} className="img-fluid" style={{ width: "100%", height: "300px" }} alt="project"/>
                                             </SRLWrapper>
                                             <div className="overlay">
                                                 <div className="d-flex justify-content-between align-items-center">

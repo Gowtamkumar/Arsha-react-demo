@@ -8,7 +8,7 @@ const NewsLetter = () => {
                 <div className="col-md-12 text-center Newsletter">
                     <h3>Join Our Newsletter</h3>
                     <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-                    <form className="row g-3 needs-validation d-flex justify-content-center " novalidate>
+                    <form className="row g-3 needs-validation d-flex justify-content-center " noValidate>
                         <div className="col-md-7 position-relative">
                             <div className="input-group has-validation">
                                 <input type="text" className="form-control Newsletter-from"
