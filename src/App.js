@@ -1,39 +1,40 @@
 import './App.css';
-import Header from './Components/Header/Header';
-import Clients from './Components/Clients/Clients';
-import About from './Components/About/About';
-import Accordion from './Components/About/Accordion';
-import Skills from './Components/Skills/Skills';
-import Services from './Components/Services/Services';
-import Action from './Components/Action/Action';
-import Portfolio from './Components/Portfolio/Portfolio';
-import Team from './Components/Team/Team';
-import Price from './Components/Price/Price';
-import Frequently from './Components/Frequently/Frequently';
-import Contact from './Components/Shared/Contact/Contact';
-import NewsLetter from './Components/NewsLetter/NewsLetter';
-import Widget from './Components/Widget/Widget';
-import Footer from './Components/Shared/Footer/Footer';
-
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import Home from './Components/Home/Home';
+import Login from './Components/auth/Login';
+import Registration from './Components/auth/Registration';
+import ContactList from './Components/ContactList/ContactList';
+import { createContext, useState } from 'react';
+import PrivateRoute from './Components/auth/PrivateRoute/PrivateRoute';
+export const UserContext = createContext()
 function App() {
+  const [LoggedInUser, setLoggedInUser] = useState({})
   return (
+
     <main>
-        <Header></Header>
-        <Clients></Clients>
-        <About></About>
-        <Accordion></Accordion>
-        <Skills></Skills>
-        <Services></Services>
-        <Action></Action>
-        <Portfolio></Portfolio>
-        <Team></Team>
-        <Price></Price>
-        <Frequently></Frequently>
-        <Contact></Contact>
-        <NewsLetter></NewsLetter>
-        <Widget></Widget>
-        <Footer></Footer>
+      <UserContext.Provider value={[LoggedInUser, setLoggedInUser]}>
+      <Router>
+        <Switch>
+          <Route path="/registration">
+            <Registration></Registration>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+          <PrivateRoute path="/contactlist">
+            <ContactList></ContactList>
+          </PrivateRoute>
+          <Route path="/">
+            <Home></Home>
+          </Route>
+        </Switch>
+
+      </Router>
+      </UserContext.Provider>
     </main>
   );
 }

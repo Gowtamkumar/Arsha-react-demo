@@ -1,6 +1,10 @@
 import React from 'react';
 import './Contact.css'
+import { useForm } from "react-hook-form";
 const Contact = () => {
+
+    const { register, handleSubmit, formState: { errors } } = useForm();
+  const onSubmit = data => console.log(data);
     return (
         <section className="heading-section pt-5 pb-5" id="contact">
             <div className="container pb-5 pt-5">
@@ -48,36 +52,44 @@ const Contact = () => {
                             </div>
                             <iframe
                                 src="https://www.google.ccontactom/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-                                frameBorder="0" style={{ border: '0', width: '100%', height: '346px' }}
-                                 title="This is google"></iframe>
-                                
+                                frameBorder="0" style={{ border: '0', width: '100%', height: '251px' }}
+                                title="This is google"></iframe>
+
 
                         </div>
                     </div>
                     <div className="col-md-7" data-aos="fade-up">
                         <div className="from shadow p-5 contact-from">
-                            <form className="row g-3">
+                            <form className="row g-3" onSubmit={handleSubmit(onSubmit)}>
                                 <div className="col-md-6">
-                                    
-                                    <input type="text" className="form-control" id="inputEmail4" placeholder="Your Name" required/>
+
+                                    {/* <input type="text" className="form-control" id="name" placeholder="Your Name"  /> */}
+                                    <input className="form-control" type="text" {...register("fullName", { required: true })} required placeholder="Your Name" />
+                                    {errors.fullName && <span>This field is required</span>}
+
                                 </div>
                                 <div className="col-md-6">
-                                 
-                                    <input type="email" className="form-control" id="email420" placeholder="Your Email" required />
+
+                                    {/* <input type="email" className="form-control" id="email" placeholder="Your Email" required /> */}
+                                    <input className="form-control" type="email" {...register("email", { required: true })} required placeholder="Your Email" />
+                                    {errors.email && <span>This field is required</span>}
                                 </div>
                                 <div className="col-12">
-                                   
-                                    <input type="text" className="form-control" id="inputSubjeet"
-                                        placeholder="subject" required />
+
+                                    {/* <input type="text" className="form-control" id="subjeet"
+                                        placeholder="subject" required /> */}
+                                        <input className="form-control" type="text" {...register("subjeet", { required: true })} required placeholder="Your subjeet" />
+                                    {errors.subjeet && <span>This field is required</span>}
                                 </div>
 
                                 <div className="mb-3">
-                                    
-                                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="13" placeholder="Message..."
+
+                                    <textarea className="form-control" id="message" rows="13"  {...register("message", { required: true })} 
                                     ></textarea>
+                                    {errors.message && <span>This field is required</span>}
                                 </div>
                                 <div className="col-12 d-flex justify-content-center">
-                                    <button type="button"
+                                    <button type="submit" id="messageSend" 
                                         className="brand-bgcolor message-send custome-button rounded-pill text-light">Send
                                         Message</button>
                                 </div>

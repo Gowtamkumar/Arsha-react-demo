@@ -14,7 +14,7 @@ const Portfolio = () => {
         AOS.init({
             duration: 2000
         });
-    }, [])
+    }, [catagory])
 
     const allproject = [
         {
@@ -102,40 +102,40 @@ const Portfolio = () => {
                                     <CatagoryButton catagoryName="card" handlesetcatagory={Setcatagory} catagoryActive={catagory === 'card' ? true : false} />
                                 </div>
                             </div>
-                           
-                                {
-                                    filterProject.map((portfolio) =>
-                                        <div className="grid-item col-md-4" key={portfolio.id}>
-                                             <SRLWrapper>
-                                            <img src={portfolio.imageUrl} className="img-fluid" style={{ width: "100%", height: "300px" }} alt="project"/>
-                                            </SRLWrapper>
-                                            <div className="overlay">
-                                                <div className="d-flex justify-content-between align-items-center">
-                                                    <div className="overlay-title">
-                                                        <h5>App 1</h5>
-                                                        <p>App</p>
-                                                    </div>
 
-                                                    <div>
+                            {
+                                filterProject.map((portfolio) =>
+                                    <div className="grid-item col-md-4" key={portfolio.id}>
+                                        <SRLWrapper>
+                                            <img src={portfolio.imageUrl} className="img-fluid" style={{ width: "100%", height: "300px" }} alt="project" />
+                                        </SRLWrapper>
+                                        <div className="overlay">
+                                            <div className="d-flex justify-content-between align-items-center">
+                                                <div className="overlay-title">
+                                                    <h5>App 1</h5>
+                                                    <p>App</p>
+                                                </div>
 
-                                                        {/* <a className="popupimg"
+                                                <div>
+
+                                                    {/* <a className="popupimg"
                                                             href={portfolio.imageUrl}>
                                                             <i className="fas fa-plus"></i>
                                                             
                                                         </a> */}
 
-                                                        <a href="Index.html">
-                                                            <i className="fas fa-link"></i>
-                                                        </a>
-                                                    </div>
-
+                                                    <a href="Index.html">
+                                                        <i className="fas fa-link"></i>
+                                                    </a>
                                                 </div>
-                                            </div>
 
+                                            </div>
                                         </div>
-                                    )
-                                }
-                            
+
+                                    </div>
+                                )
+                            }
+
                         </div>
 
 
